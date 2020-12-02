@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{title}}</title>
+
+</head>
+
+<body bgcolor="yellow" leftmargin=100px rightmargin=100px topmargin=50px align="center">
+
+<h1>Výpočty obsahů a obvodů</h1>
+  <nav>
+  <font size="5">
+  <ul type="None">
+    <li><a href="{{ url_for('index') }}">INDEX</a></li>
+    <li><a href="{{ url_for('trojuhelnik') }}">TROJUHELNÍK</a></li>
+    <li><a href="{{ url_for('ctverec') }}">ČTVEREC</a></li>
+    <li><a href="{{ url_for('obdelnik') }}">OBDÉLNÍK</a></li>
+    <li><a href="{{ url_for('zkracovac') }}">ZKRACOVAC</a></li>
+
+  </ul></font></nav>
+
+  <hr size="20" color="grey">
+
+<form action="{{ url_for('login') }}" method="POST">
+    <p>Name:</p>
+    <p><input type="text" name="nm" /></p>
+    <p><input type="submit" value="submit" /></p>
+</form>
+
+<footer>
+<font size="5"><p>Pro více info klikněte<a href="https://www.vypocitejto.cz/"> zde</a></p></font>
+</footer>
+
+</body>
+</html>
+
+

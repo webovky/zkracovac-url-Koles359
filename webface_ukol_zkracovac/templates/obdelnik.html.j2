@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{title}}</title>
+ 
+</head>
+
+<body bgcolor="yellow" leftmargin=100px rightmargin=100px topmargin=50px align="center">
+
+  <h1>Výpočet obsahu a obvodu obdélníka</h1>
+
+  <font size="5">
+  <nav>
+  <ul type="None">
+    <li><a href="{{ url_for('index') }}">INDEX</a></li>
+    <li><a href="{{ url_for('trojuhelnik') }}">TROJUHELNÍK</a></li>
+    <li><a href="{{ url_for('ctverec') }}">ČTVEREC</a></li>
+    <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+    <li><a href="{{ url_for('zkracovac') }}">ZKRACOVAC</a></li>
+
+  </ul></nav>
+
+  <hr size="20" color="grey">
+
+  <form method="get">
+    <input type="text" name="a" value="{{request.args.get('a') or ''}}" placeholder="délka strany 'a'" />
+    <input type="text" name="b" value="{{request.args.get('b') or ''}}" placeholder="délka strany 'b'" />
+    <input type="submit" value="výsledek" />
+  </form>
+
+  obvod: {{o}}<br>obsah: {{s}}  
+  </font>
+
+<footer>
+<font size="5"><p>Pro více info klikněte<a href="https://www.vypocitejto.cz/"> zde</a></p></font>
+</footer>
+
+
+
+
+</body>
+</html>
